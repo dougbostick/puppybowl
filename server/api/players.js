@@ -11,7 +11,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-// GET /api/players/:id
+// GET /api/players/anyinput
 router.get('/:id', async (req, res, next) => {
   try {
     const player = await Player.findByPk(req.params.id, {
